@@ -1,4 +1,4 @@
-Protocol-Buffers-
+Google-Protocol-Buffers 
 =================
 
 Google Protocol Buffers CSharp  allow use on iOS, WP7, Mono for Android, WinRT, etc. via:http://code.google.com/p/protobuf-csharp-port/
@@ -11,8 +11,17 @@ Tools use
 	protoc --descriptor_set_out=addressbook.protobin --include_imports addressbook.proto
 	protogen addressbook.protobin 
 
+NuGet
+=================
+Google.ProtocolBuffers 2.4.1.521 http://www.nuget.org/packages/Google.ProtocolBuffers/
 
-license
+To install Google.ProtocolBuffers, run the following command in the  Package Manager Console
+
+	PM> Install-Package Google.ProtocolBuffers 
+	
+by csharptest.net 
+
+License
 =================
 Protocol Buffers - Google's data interchange format
  
