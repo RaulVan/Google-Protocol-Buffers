@@ -1,0 +1,31 @@
+echo on
+
+protoc --descriptor_set_out=stop.protobin --include_imports stop.proto
+protoc --descriptor_set_out=road.protobin --include_imports road.proto
+protoc --descriptor_set_out=regeocode.protobin --include_imports regeocode.proto
+
+protoc --descriptor_set_out=header.protobin --include_imports header.proto
+protoc --descriptor_set_out=proto_commons.protobin --include_imports proto_commons.proto
+protoc --descriptor_set_out=intention.protobin --include_imports intention.proto
+protoc --descriptor_set_out=navigation.protobin --include_imports navigation.proto
+protoc --descriptor_set_out=place.protobin --include_imports place.proto
+protoc --descriptor_set_out=line.protobin --include_imports line.proto
+protoc --descriptor_set_out=inputtips.protobin --include_imports inputtips.proto
+protoc --descriptor_set_out=geocode.protobin --include_imports geocode.proto
+
+protoc --descriptor_set_out=inputtips.protobin --include_imports inputtips.proto
+protoc --descriptor_set_out=geocode.protobin --include_imports geocode.proto
+
+
+protogen stop.protobin 
+protogen road.protobin 
+protogen regeocode.protobin 
+
+protogen header.protobin 
+protogen proto_commons.protobin 
+protogen intention.protobin
+protogen navigation.protobin
+protogen place.protobin 
+protogen line.protobin 
+protogen inputtips.protobin 
+protogen geocode.protobin 
