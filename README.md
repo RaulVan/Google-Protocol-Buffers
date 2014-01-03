@@ -3,6 +3,13 @@ Protocol-Buffers-
 
 Google Protocol Buffers CSharp  allow use on iOS, WP7, Mono for Android, WinRT, etc. via:http://code.google.com/p/protobuf-csharp-port/
 
+Tools 使用 PB文件转换成C#代码
+=================
+ 将proto文件复制Tools文件夹下，编辑getCSFiles.bat文件，保存后运行即可，脚步代码如下：
+	echo on
+	protoc --descriptor_set_out=addressbook.protobin --include_imports addressbook.proto
+	protogen addressbook.protobin 
+
 
 license
 =================
