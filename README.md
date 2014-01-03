@@ -3,6 +3,8 @@ Google Protocol Buffers
 
 Google Protocol Buffers CSharp  allow use on iOS, WP7/8, Mono for Android, WinRT, etc. via:http://code.google.com/p/protobuf-csharp-port/
 
+Open Solution file ProtocolBuffersLibrary.PL40.sln 
+
 Tools use
 =================
  Copy the *. Proto files to the Tools folder, edit getCSFiles.bat, save and run.
