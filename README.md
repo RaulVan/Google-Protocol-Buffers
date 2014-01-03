@@ -5,7 +5,9 @@ Google Protocol Buffers CSharp  allow use on iOS, WP7, Mono for Android, WinRT, 
 
 Tools use
 =================
- 将proto文件复制Tools文件夹下，编辑getCSFiles.bat文件，保存后运行即可，脚步代码如下：
+ Copy the *. Proto files to the Tools folder, edit getCSFiles.bat, save and run.
+ 
+ Script code :
  
 	echo on
 	protoc --descriptor_set_out=addressbook.protobin --include_imports addressbook.proto
